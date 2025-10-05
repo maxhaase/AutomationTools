@@ -1,10 +1,10 @@
 #!/bin/bash
 # AUTHOR: maxhaase@gmail.com
-# DESCRIPTION: Backsup important files on your computer in a folder, preferebly an external device mounted 
-# Yous should add it to crontab so it executes regularly 
+# DESCRIPTION: Simple backup of the solution (or anything else you'd want to protect), preferebly to an external device mounted 
+# You should add it to crontab so it executes regularly 
 
 # Define backup and source directories
-BACKUP_DIR="/SPACE/BACKUP" # This is where your backup files will be stored
+BACKUP_DIR="/SPACE/BACKUP" # This is where your backup files will be stored, change it to suit your needs
 SOURCE_DIR="/"
 EXCLUDE_DIRS="--exclude=/proc --exclude=/tmp --exclude=/mnt --exclude=/dev --exclude=/sys --exclude=/run --exclude=$BACKUP_DIR"
 
